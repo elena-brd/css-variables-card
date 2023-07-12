@@ -1,0 +1,72 @@
+/* variables for the root elements */
+:root {
+    --background-color: #ebebeb;
+    --main-dark-color: #181818;
+    --line-height: 1.6;
+    --span-color: #777;
+    --header-bg-color: #333;
+    --header-color: #fff;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--background-color);
+    color: var(--main-dark-color);
+    line-height: var(--line-height);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/* define root variables for container */
+.container {
+    --container-bg-color: #fff;
+    --container-color: #181818;
+    --container-max-width: 980px;
+    --box-shadow-h: -2px;
+    --box-shadow-v: 7px;
+    --box-shadow-blur: 10px;
+    --box-shadow-color: rgba(172, 172, 172, 0.4);
+}
+
+.container {
+    margin: 8rem auto;
+    background: var(--container-bg-color);
+    max-width: var(--container-max-width);
+    width: 100%;
+    box-shadow: var(--box-shadow-h) var(--box-shadow-v) var(--box-shadow-blur) var(--box-shadow-color);
+}
+
+#main-header {
+    background: var(--header-bg-color);
+    color: var(--header-color);
+    padding: 0.5rem 1rem;
+}
+
+#card {
+    display: flex;
+    justify-content: center;
+}
+
+.card-info {
+    padding: 2rem 4rem;
+}
+
+.card-info span {
+    color: var(--span-color);
+    font-weight: 500;
+}
+
+.card-info p {
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
